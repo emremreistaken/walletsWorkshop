@@ -1,9 +1,12 @@
 import { Wallet } from 'ethers';
-const mnemonic = 'radar blur cabbage chef fix engine embark joy scheme fiction master release';
+import { generateMnemonic } from 'bip39';
 
 const randomWallet = new Wallet.createRandom();
 console.log('\n', `Rastgele oluşturduğumuz bir cüzdanın adresi: ${randomWallet.address}`);
 console.log(`Rastgele oluşturduğumuz cüzdanın private keyi: ${randomWallet.privateKey}`, '\n');
+
+const mnemonic = generateMnemonic();
+console.log(`HD wallet için rastgele oluşturduğumuz mnemonic`, '\n', '\n', mnemonic, '\n');
 
 const hdWalletAcc1 = new Wallet.fromMnemonic(mnemonic);
 console.log(`HD wallet 1. account address: ${hdWalletAcc1.address}`);
