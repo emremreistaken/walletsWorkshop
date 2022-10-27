@@ -2,4 +2,4 @@
 
 dizinde 
 ## node wallet.js
-kullanalım. teşekkürler
+komutunu kullanalım. teşekkürler
