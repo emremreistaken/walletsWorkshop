@@ -1,5 +1,5 @@
 # walletsWorkshop
 
-dizinde 
-## node wallet.js
-komutunu kullanalım. teşekkürler
+git clone https://github.com/emremreistaken/walletsWorkshop.git
+npm install
+node wallet.js
